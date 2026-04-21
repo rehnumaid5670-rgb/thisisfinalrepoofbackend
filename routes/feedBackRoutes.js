@@ -28,5 +28,7 @@ router.delete("/:id", async (req, res) => {
   await feedback.findByIdAndDelete(req.params.id);
   res.json({ msg: "Deleted" });
 });
-
+router.get('/', (req, res) => {
+  res.json({ message: "Feedback route working" });
+});
 module.exports = router;
