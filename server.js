@@ -13,12 +13,12 @@ const bookRoutes = require("./routes/bookRoutes.js");
 const cardRoutes = require("./routes/CardRoutes.js");
 const loginRoutes = require("./routes/loginRoutes.js");
 const adminRoutes = require("./routes/adminRoutes.js");
-const feedbackRoutes = require("./routes/feedBackRoutes");
+const feedbackRoutes = require("./routes/feedBackRoutes.js");
 // const returnRoutes = require("./routes/returnRoutes");
-const ebookRoutes = require("./routes/ebookRoutes");
-const usingRoutes = require("./routes/usingRoutes")
-const catalogueRoutes = require("./routes/catalogueRoutes");
-const spaceRoutes = require("./routes/spaceRoutes");
+const ebookRoutes = require("./routes/ebookRoutes.js");
+const usingRoutes = require("./routes/usingRoutes.js")
+const catalogueRoutes = require("./routes/catalogueRoutes.js");
+const spaceRoutes = require("./routes/spaceRoutes.js");
 // const coursesRoutes = require("./routes/coursesRoutes");
 connectDB();
 
