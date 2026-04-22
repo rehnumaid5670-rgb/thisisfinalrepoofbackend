@@ -56,7 +56,7 @@ app.post("/api/getcard", (req, res) => {
 
 
 // Auth & User Routes
-app.use("/api/auth", authRoutes);
+// app.use("/api/auth", authRoutes);
 app.use("/api/auth", loginRoutes);
 app.use("/api/user", userRoutes);
 app.use("/api/books", bookRoutes);
