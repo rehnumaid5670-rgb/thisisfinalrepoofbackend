@@ -1,4 +1,4 @@
-const User = require("../models/user"); // example import
+const User = require("../models/User"); // example import
 
 const login = async (req, res) => {
   try {
