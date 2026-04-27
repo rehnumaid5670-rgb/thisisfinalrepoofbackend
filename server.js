@@ -20,13 +20,13 @@ const usingRoutes = require("./routes/usingRoutes.js")
 const catalogueRoutes = require("./routes/catalogueRoutes.js");
 const spaceRoutes = require("./routes/spaceRoutes.js");
 // const coursesRoutes = require("./routes/coursesRoutes");
-connectDB();
+// connectDB();
 
 const app = express();
-connectDB();
+
 app.use(cors());
 app.use(express.json());
-
+connectDB();
 // mongoose
 //   .connect("mongodb://127.0.0.1:27017/libraryDB", {
 //     useNewUrlParser: true,
@@ -116,7 +116,7 @@ app.post("/api/adminpanel/login", (req, res) => {
 
 // ================= Default Route =================
 app.get("/", (req, res) => {
-  res.send("Library API Running");
+  res.send("Library API Running");git 
 });
 app.get("/api/adminpanel/dashboard", (req, res) => {
   res.json({
@@ -130,7 +130,7 @@ app.get("/api/adminpanel/dashboard", (req, res) => {
 
 // ================= Server =================
 const PORT = process.env.PORT || 5000;
-
-app.listen(PORT, () => {
-  console.log("Server running on port 5000");
-});
+// app.listen(PORT, () => {
+//   console.log("Server running on port 5000")
+// 
+module.exports = app;
