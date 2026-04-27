@@ -4,7 +4,7 @@ const verifyToken = (req, res, next) => {
   if (!token) return res.status(403).send("Access denied");
 
   try {
-    jwt.verify(token, SECRET);
+    jwt.verify(token, librarysecret);
     next();
   } catch {
     res.status(401).send("Invalid token");
