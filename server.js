@@ -11,7 +11,7 @@ const userRoutes = require("./routes/userRoutes");
 const authRoutes = require("./routes/authRoutes");
 const bookRoutes = require("./routes/bookRoutes.js");
 const cardRoutes = require("./routes/CardRoutes.js");
-// const loginRoutes = require("./routes/loginRoutes.js");
+const loginRoutes = require("./routes/loginRoutes.js");
 const adminRoutes = require("./routes/adminRoutes.js");
 const feedbackRoutes = require("./routes/feedBackRoutes.js");
 // const returnRoutes = require("./routes/returnRoutes");
@@ -57,7 +57,7 @@ app.post("/api/getcard", (req, res) => {
 
 // Auth & User Routes
 app.use("/api/auth", authRoutes);
-// app.use("/api/auth", loginRoutes);
+app.use("/api/auth", loginRoutes);
 app.use("/api/user", userRoutes);
 app.use("/api/books", bookRoutes);
 app.use("/api/adminpanel", adminRoutes);
